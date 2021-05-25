@@ -9,5 +9,5 @@ import com.murphyl.autumn.core.factory.BeanFactory;
  * @author: murph
  */
 public class JavaConfigContext implements BeanFactory {
-    
+
 }
