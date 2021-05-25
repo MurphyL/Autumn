@@ -8,6 +8,7 @@
         <module>autumn-core</module>
         <module>autumn-demo</module>
         <module>autumn-boot</module>
+        <module>autumn-context</module>
     </modules>
 
     <groupId>com.murphyl.autumn</groupId>
