@@ -2,7 +2,7 @@ package com.murphyl.autumn.boot;
 
 import com.murphyl.autumn.boot.annotation.Config;
 import com.murphyl.autumn.core.annotation.Service;
-import com.murphyl.autumn.support.AutumnRuntime;
+import com.murphyl.autumn.core.context.AutumnContext;
 import org.reflections.Reflections;
 import org.reflections.scanners.Scanner;
 import org.reflections.scanners.SubTypesScanner;
@@ -19,7 +19,7 @@ import java.util.Set;
  */
 public final class AutumnApplication {
 
-    public static AutumnRuntime run(Class bootstrap, String... args) {
+    public static AutumnContext run(Class bootstrap, String... args) {
         Objects.requireNonNull(bootstrap);
         Scanner[] scanners = { new SubTypesScanner(false), new TypeAnnotationsScanner() };
         Reflections reflections = new Reflections(bootstrap.getPackage().getName(), scanners);
