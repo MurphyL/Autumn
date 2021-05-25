@@ -1,4 +1,4 @@
-package com.murphyl.autumn.core.annotation;
+package com.murphyl.autumn.boot.annotation;
 
 import java.lang.annotation.*;
 
@@ -11,5 +11,5 @@ import java.lang.annotation.*;
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-public @interface Configuration {
+public @interface Config {
 }

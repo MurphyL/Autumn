@@ -1,6 +1,6 @@
-package com.murphyl.autumn;
+package com.murphyl.autumn.boot;
 
-import com.murphyl.autumn.core.annotation.Configuration;
+import com.murphyl.autumn.boot.annotation.Config;
 import com.murphyl.autumn.core.annotation.Service;
 import com.murphyl.autumn.support.AutumnRuntime;
 import org.reflections.Reflections;
@@ -23,7 +23,7 @@ public final class AutumnApplication {
         Objects.requireNonNull(bootstrap);
         Scanner[] scanners = { new SubTypesScanner(false), new TypeAnnotationsScanner() };
         Reflections reflections = new Reflections(bootstrap.getPackage().getName(), scanners);
-        Set<Class<? extends Object>> configurations = reflections.getTypesAnnotatedWith(Configuration.class);
+        Set<Class<? extends Object>> configurations = reflections.getTypesAnnotatedWith(Config.class);
         for (Class<?> configClass : configurations) {
             System.out.println(configClass);
         }

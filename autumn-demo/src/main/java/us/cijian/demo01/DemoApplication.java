@@ -1,6 +1,6 @@
 package us.cijian.demo01;
 
-import com.murphyl.autumn.AutumnApplication;
+import com.murphyl.autumn.boot.AutumnApplication;
 
 /**
  * 测试

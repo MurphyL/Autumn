@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>autumn-demo</artifactId>
+    <artifactId>autumn-boot</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -19,7 +19,7 @@
     <dependencies>
         <dependency>
             <groupId>com.murphyl.autumn</groupId>
-            <artifactId>autumn-boot</artifactId>
+            <artifactId>autumn-core</artifactId>
             <version>${parent.version}</version>
         </dependency>
     </dependencies>

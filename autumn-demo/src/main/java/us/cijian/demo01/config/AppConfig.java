@@ -1,7 +1,7 @@
 package us.cijian.demo01.config;
 
 import com.murphyl.autumn.core.annotation.Bean;
-import com.murphyl.autumn.core.annotation.Configuration;
+import com.murphyl.autumn.boot.annotation.Config;
 
 /**
  * APP - Config
@@ -9,7 +9,7 @@ import com.murphyl.autumn.core.annotation.Configuration;
  * @date: 2021/5/25 21:21
  * @author: murph
  */
-@Configuration
+@Config
 public class AppConfig {
 
     @Bean
