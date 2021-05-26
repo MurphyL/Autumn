@@ -6,9 +6,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>autumn-core</module>
-        <module>autumn-demo</module>
         <module>autumn-boot</module>
-        <module>autumn-context</module>
+        <module>autumn-demo</module>
     </modules>
 
     <groupId>com.murphyl.autumn</groupId>

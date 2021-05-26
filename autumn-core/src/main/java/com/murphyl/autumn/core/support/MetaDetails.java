@@ -1,12 +1,14 @@
-package com.murphyl.autumn.core.context;
+package com.murphyl.autumn.core.support;
+
+import com.murphyl.autumn.core.annotation.Value;
 
 /**
- * 运行时 - 上下文
+ * 元信息
  *
- * @date: 2021/5/13 11:20
+ * @date: 2021/5/26 14:21
  * @author: murph
  */
-public interface AutumnContext {
+public interface MetaDetails {
 
 
     /**
@@ -14,6 +16,7 @@ public interface AutumnContext {
      *
      * @return
      */
+    @Value("vm.unique()")
     String getId();
 
     /**
@@ -35,6 +38,7 @@ public interface AutumnContext {
      *
      * @return
      */
+    @Value("vm.timestamp()")
     long getStartupDate();
 
 }
